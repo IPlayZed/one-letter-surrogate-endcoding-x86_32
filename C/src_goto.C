@@ -24,8 +24,20 @@ void encrypt(char *input, char key[], char *output) {
                 output[i]=key[j];
                 i++;
         /*************************************************************/
-        goto loop;
+    goto loop;
     end:
         output[i]='\0';    
     /*****************************************************************/   
+}
+
+int main()
+{
+    char *input="abz";
+    char key[]="DKVQFIBJWPESCXHTMYAUOLRGZN";
+    char output[20];
+
+    encrypt(input,key,output);
+    printf ("%s -> %s \n", input, output) ;   
+
+    return 0;
 }
