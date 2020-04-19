@@ -16,6 +16,7 @@ encrypt:
     push edi
     push ebx
     push eax
+    push edx
 
 
     #esi=input[]
@@ -65,6 +66,7 @@ encrypt:
         mov [edi+edx], al
         mov eax, edi
 
+    pop edx
     pop eax
     pop ebx
     pop edi
