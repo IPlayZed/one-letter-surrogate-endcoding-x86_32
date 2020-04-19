@@ -7,7 +7,7 @@ FORMAT:
 OUTPUT:
     .asciz "                   "
 .text
-.global encrypt
+.globeax encrypt
 encrypt:
     push ebp
     mov ebp, esp
